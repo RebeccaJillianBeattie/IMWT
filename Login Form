@@ -1,0 +1,33 @@
+<h1>Login Form</h1>
+<form method="post" action="https://www.fabiovitali.it/TW/DHDK/doResponse.php">
+  <p>
+    <label><i>Name</i><input type="text" name="name"></label>
+    <label><i>Middle Initial</i><input type="text" name="middle initial"></label>
+    <label><i>Surname</i><input type="text" name="surname"></label>
+  </p>
+  <p>Personal Details:
+    <label><i>Address</i><input type="text" name="address"></label>
+    <label><i>Post Code</i><input type="text" name="post code"></label>
+    <label><i>City</i><input type="text" name="city"></label>
+    <label><i>Phone Number</i><input type="text" name="phone number"></label>
+    <label><i>Email</i><input type="text" name="email"></label>
+  </p>
+  <p>Gender:
+    <label><input type="radio" name="gender" value="m" checked>Male</label>
+    <label><input type="radio" name="gender" value="f">Female</label>
+    <label><input type="radio" name="gender" value="x">Prefer not to day</label>
+  </p>
+  <p>Cultural Preferences:
+    <label><input type="checkbox" name="likes" value="books" checked>Books</label>
+    <label><input type="checkbox" name="likes" value="art">Art</label>
+    <label><input type="checkbox" name="likes" value="films">Films</label>
+    <label><input type="checkbox" name="likes" value="sport">Sport</label>
+    <label><input type="checkbox" name="likes" value="cooking">Cooking</label>
+    <label><input type="checkbox" name="likes" value="friends">Friends</label>
+  </p>
+  <p>Personal Description:
+    <textarea placeholder="Describe yourself here"></textarea>
+  </p>
+  <p><input type="submit" name="submit" value="ok">
+     <input type="reser" name="reset" value="cancel">
+  </p>
