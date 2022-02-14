@@ -5,107 +5,320 @@
 	</head>
 	<body>
 
-<h1>Sunday Reading: The Birth of Tech</h1>
-<p>By Erin Overbey and Joshua Rothman January 27, 2019 </p>
+<h1>Book a vacation</h1>
+<form method="post" action="https://www.fabiovitali.it/TW/DHDK/doResponse.php">
+	
+	<p>
+		<label>Choose Island: <br><select name="choose island">
+			<option value="">Choose...</option>
+			<option value="Beaches to relax in" selected>Beaches to relax in...</option>
+			<option value="Aitutaki, Cook Islands">Aitutaki, Cook Islands</option>
+			<option value="Maldives">Maldives</option>
+			<option value="Saba">Saba</option>
+			<option value="Koh Rong, Cambodia">Koh Rong, Cambodia</option>
+			<option value="Koh Lipe, Thailand">Koh Lipe, Thailand</option>
+			<option value="Beaches off the beaten track">Beaches off the Beaten Track...</option>
+			<option value="Fernando do Noronha, Brazil">Fernando do Noronha, Brazil</option>
+			<option value="Bohey Duland, Malaysia">Bohey Duland, Malaysia</option>
+			<option value="Moorea, French Polynesia">Moorea, French Polynesia</option>
+			<option value="Havelock Island, India">Havelock Island, India</option>
+			<option value="Carriacou, Grenada">Carriacou, Grenada</option>
+		</select></label>
+	</p>
+	
+	<p>Arriving: <input type="date" name="arriving"></p>
+	
+	<p>Departing: <input type="date" name="departing"></p>
+	
+	<p>
+		<label>Name:<br>
+		<input type="text" name="name"></label>
+	</p>
+	
+	<p>
+		<label>Surname:<br>
+		<input type="text" name="surname"></label>
+	</p>
+	
+	<p>
+		<label>Address:<br>
+		<input type="text" name="address"></label>
+	</p>
+	
+	<p>
+		<label>City:<br>
+		<input type="text" name="city"></label>
+	</p>
+	
+	<p>
+		<label>State: <br> <select name="state">
+			<option value="">Choose...</option>
+			<option value="AF">Afghanistan</option>
+    <option value="AX">Aland Islands</option>
+    <option value="AL">Albania</option>
+    <option value="DZ">Algeria</option>
+    <option value="AS">American Samoa</option>
+    <option value="AD">Andorra</option>
+    <option value="AO">Angola</option>
+    <option value="AI">Anguilla</option>
+    <option value="AQ">Antarctica</option>
+    <option value="AG">Antigua and Barbuda</option>
+    <option value="AR">Argentina</option>
+    <option value="AM">Armenia</option>
+    <option value="AW">Aruba</option>
+    <option value="AU">Australia</option>
+    <option value="AT">Austria</option>
+    <option value="AZ">Azerbaijan</option>
+    <option value="BS">Bahamas</option>
+    <option value="BH">Bahrain</option>
+    <option value="BD">Bangladesh</option>
+    <option value="BB">Barbados</option>
+    <option value="BY">Belarus</option>
+    <option value="BE">Belgium</option>
+    <option value="BZ">Belize</option>
+    <option value="BJ">Benin</option>
+    <option value="BM">Bermuda</option>
+    <option value="BT">Bhutan</option>
+    <option value="BO">Bolivia</option>
+    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+    <option value="BA">Bosnia and Herzegovina</option>
+    <option value="BW">Botswana</option>
+    <option value="BV">Bouvet Island</option>
+    <option value="BR">Brazil</option>
+    <option value="IO">British Indian Ocean Territory</option>
+    <option value="BN">Brunei Darussalam</option>
+    <option value="BG">Bulgaria</option>
+    <option value="BF">Burkina Faso</option>
+    <option value="BI">Burundi</option>
+    <option value="KH">Cambodia</option>
+    <option value="CM">Cameroon</option>
+    <option value="CA">Canada</option>
+    <option value="CV">Cape Verde</option>
+    <option value="KY">Cayman Islands</option>
+    <option value="CF">Central African Republic</option>
+    <option value="TD">Chad</option>
+    <option value="CL">Chile</option>
+    <option value="CN">China</option>
+    <option value="CX">Christmas Island</option>
+    <option value="CC">Cocos (Keeling) Islands</option>
+    <option value="CO">Colombia</option>
+    <option value="KM">Comoros</option>
+    <option value="CG">Congo</option>
+    <option value="CD">Congo, Democratic Republic of the Congo</option>
+    <option value="CK">Cook Islands</option>
+    <option value="CR">Costa Rica</option>
+    <option value="CI">Cote D'Ivoire</option>
+    <option value="HR">Croatia</option>
+    <option value="CU">Cuba</option>
+    <option value="CW">Curacao</option>
+    <option value="CY">Cyprus</option>
+    <option value="CZ">Czech Republic</option>
+    <option value="DK">Denmark</option>
+    <option value="DJ">Djibouti</option>
+    <option value="DM">Dominica</option>
+    <option value="DO">Dominican Republic</option>
+    <option value="EC">Ecuador</option>
+    <option value="EG">Egypt</option>
+    <option value="SV">El Salvador</option>
+    <option value="GQ">Equatorial Guinea</option>
+    <option value="ER">Eritrea</option>
+    <option value="EE">Estonia</option>
+    <option value="ET">Ethiopia</option>
+    <option value="FK">Falkland Islands (Malvinas)</option>
+    <option value="FO">Faroe Islands</option>
+    <option value="FJ">Fiji</option>
+    <option value="FI">Finland</option>
+    <option value="FR">France</option>
+    <option value="GF">French Guiana</option>
+    <option value="PF">French Polynesia</option>
+    <option value="TF">French Southern Territories</option>
+    <option value="GA">Gabon</option>
+    <option value="GM">Gambia</option>
+    <option value="GE">Georgia</option>
+    <option value="DE">Germany</option>
+    <option value="GH">Ghana</option>
+    <option value="GI">Gibraltar</option>
+    <option value="GR">Greece</option>
+    <option value="GL">Greenland</option>
+    <option value="GD">Grenada</option>
+    <option value="GP">Guadeloupe</option>
+    <option value="GU">Guam</option>
+    <option value="GT">Guatemala</option>
+    <option value="GG">Guernsey</option>
+    <option value="GN">Guinea</option>
+    <option value="GW">Guinea-Bissau</option>
+    <option value="GY">Guyana</option>
+    <option value="HT">Haiti</option>
+    <option value="HM">Heard Island and Mcdonald Islands</option>
+    <option value="VA">Holy See (Vatican City State)</option>
+    <option value="HN">Honduras</option>
+    <option value="HK">Hong Kong</option>
+    <option value="HU">Hungary</option>
+    <option value="IS">Iceland</option>
+    <option value="IN">India</option>
+    <option value="ID">Indonesia</option>
+    <option value="IR">Iran, Islamic Republic of</option>
+    <option value="IQ">Iraq</option>
+    <option value="IE">Ireland</option>
+    <option value="IM">Isle of Man</option>
+    <option value="IL">Israel</option>
+    <option value="IT">Italy</option>
+    <option value="JM">Jamaica</option>
+    <option value="JP">Japan</option>
+    <option value="JE">Jersey</option>
+    <option value="JO">Jordan</option>
+    <option value="KZ">Kazakhstan</option>
+    <option value="KE">Kenya</option>
+    <option value="KI">Kiribati</option>
+    <option value="KP">Korea, Democratic People's Republic of</option>
+    <option value="KR">Korea, Republic of</option>
+    <option value="XK">Kosovo</option>
+    <option value="KW">Kuwait</option>
+    <option value="KG">Kyrgyzstan</option>
+    <option value="LA">Lao People's Democratic Republic</option>
+    <option value="LV">Latvia</option>
+    <option value="LB">Lebanon</option>
+    <option value="LS">Lesotho</option>
+    <option value="LR">Liberia</option>
+    <option value="LY">Libyan Arab Jamahiriya</option>
+    <option value="LI">Liechtenstein</option>
+    <option value="LT">Lithuania</option>
+    <option value="LU">Luxembourg</option>
+    <option value="MO">Macao</option>
+    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+    <option value="MG">Madagascar</option>
+    <option value="MW">Malawi</option>
+    <option value="MY">Malaysia</option>
+    <option value="MV">Maldives</option>
+    <option value="ML">Mali</option>
+    <option value="MT">Malta</option>
+    <option value="MH">Marshall Islands</option>
+    <option value="MQ">Martinique</option>
+    <option value="MR">Mauritania</option>
+    <option value="MU">Mauritius</option>
+    <option value="YT">Mayotte</option>
+    <option value="MX">Mexico</option>
+    <option value="FM">Micronesia, Federated States of</option>
+    <option value="MD">Moldova, Republic of</option>
+    <option value="MC">Monaco</option>
+    <option value="MN">Mongolia</option>
+    <option value="ME">Montenegro</option>
+    <option value="MS">Montserrat</option>
+    <option value="MA">Morocco</option>
+    <option value="MZ">Mozambique</option>
+    <option value="MM">Myanmar</option>
+    <option value="NA">Namibia</option>
+    <option value="NR">Nauru</option>
+    <option value="NP">Nepal</option>
+    <option value="NL">Netherlands</option>
+    <option value="AN">Netherlands Antilles</option>
+    <option value="NC">New Caledonia</option>
+    <option value="NZ">New Zealand</option>
+    <option value="NI">Nicaragua</option>
+    <option value="NE">Niger</option>
+    <option value="NG">Nigeria</option>
+    <option value="NU">Niue</option>
+    <option value="NF">Norfolk Island</option>
+    <option value="MP">Northern Mariana Islands</option>
+    <option value="NO">Norway</option>
+    <option value="OM">Oman</option>
+    <option value="PK">Pakistan</option>
+    <option value="PW">Palau</option>
+    <option value="PS">Palestinian Territory, Occupied</option>
+    <option value="PA">Panama</option>
+    <option value="PG">Papua New Guinea</option>
+    <option value="PY">Paraguay</option>
+    <option value="PE">Peru</option>
+    <option value="PH">Philippines</option>
+    <option value="PN">Pitcairn</option>
+    <option value="PL">Poland</option>
+    <option value="PT">Portugal</option>
+    <option value="PR">Puerto Rico</option>
+    <option value="QA">Qatar</option>
+    <option value="RE">Reunion</option>
+    <option value="RO">Romania</option>
+    <option value="RU">Russian Federation</option>
+    <option value="RW">Rwanda</option>
+    <option value="BL">Saint Barthelemy</option>
+    <option value="SH">Saint Helena</option>
+    <option value="KN">Saint Kitts and Nevis</option>
+    <option value="LC">Saint Lucia</option>
+    <option value="MF">Saint Martin</option>
+    <option value="PM">Saint Pierre and Miquelon</option>
+    <option value="VC">Saint Vincent and the Grenadines</option>
+    <option value="WS">Samoa</option>
+    <option value="SM">San Marino</option>
+    <option value="ST">Sao Tome and Principe</option>
+    <option value="SA">Saudi Arabia</option>
+    <option value="SN">Senegal</option>
+    <option value="RS">Serbia</option>
+    <option value="CS">Serbia and Montenegro</option>
+    <option value="SC">Seychelles</option>
+    <option value="SL">Sierra Leone</option>
+    <option value="SG">Singapore</option>
+    <option value="SX">Sint Maarten</option>
+    <option value="SK">Slovakia</option>
+    <option value="SI">Slovenia</option>
+    <option value="SB">Solomon Islands</option>
+    <option value="SO">Somalia</option>
+    <option value="ZA">South Africa</option>
+    <option value="GS">South Georgia and the South Sandwich Islands</option>
+    <option value="SS">South Sudan</option>
+    <option value="ES">Spain</option>
+    <option value="LK">Sri Lanka</option>
+    <option value="SD">Sudan</option>
+    <option value="SR">Suriname</option>
+    <option value="SJ">Svalbard and Jan Mayen</option>
+    <option value="SZ">Swaziland</option>
+    <option value="SE">Sweden</option>
+    <option value="CH">Switzerland</option>
+    <option value="SY">Syrian Arab Republic</option>
+    <option value="TW">Taiwan, Province of China</option>
+    <option value="TJ">Tajikistan</option>
+    <option value="TZ">Tanzania, United Republic of</option>
+    <option value="TH">Thailand</option>
+    <option value="TL">Timor-Leste</option>
+    <option value="TG">Togo</option>
+    <option value="TK">Tokelau</option>
+    <option value="TO">Tonga</option>
+    <option value="TT">Trinidad and Tobago</option>
+    <option value="TN">Tunisia</option>
+    <option value="TR">Turkey</option>
+    <option value="TM">Turkmenistan</option>
+    <option value="TC">Turks and Caicos Islands</option>
+    <option value="TV">Tuvalu</option>
+    <option value="UG">Uganda</option>
+    <option value="UA">Ukraine</option>
+    <option value="AE">United Arab Emirates</option>
+    <option value="GB">United Kingdom</option>
+    <option value="US">United States</option>
+    <option value="UM">United States Minor Outlying Islands</option>
+    <option value="UY">Uruguay</option>
+    <option value="UZ">Uzbekistan</option>
+    <option value="VU">Vanuatu</option>
+    <option value="VE">Venezuela</option>
+    <option value="VN">Viet Nam</option>
+    <option value="VG">Virgin Islands, British</option>
+    <option value="VI">Virgin Islands, U.s.</option>
+    <option value="WF">Wallis and Futuna</option>
+    <option value="EH">Western Sahara</option>
+    <option value="YE">Yemen</option>
+    <option value="ZM">Zambia</option>
+    <option value="ZW">Zimbabwe</option>
+</select></label>
+	</p>
+	
+	<p>
+		<label>Zip:<input type="text" name="zip"></label>
+	</p>
+	
+	<p>
+		<label><input type="checkbox" name="remember me" value="remember me">Remember me:</label>
+	</p>
+	
+	<p><input type="submit" name="submit" value="Book your vacation">
+		<input type="submit" name="submit" value="Ok">
+	</p>
 
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-The-Internet.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by Jonathan Elderfield / Liaison / Getty</small></p>
-
-	<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
-	<caption>Contents</caption>
-		<tr>
-			<th>Story</th><th>Page</th></thead>
-		</tr>
-		<tr>
-			<th>My First Flame</th><td>1</td>
-		</tr>
-		<tr>
-			<th>Virtual Love</th><td>2</td>
-		</tr>
-		<tr>
-			<th>The Perceptionist</th><td>3</td>
-		</tr>
-		<tr>
-			<th>The Media</th><td>4</td>
-		</tr>
-		<tr>
-			<th>The Tao of Wi-Fi</th><td>5</td>
-		</tr>
-		<tr>
-			<th>Free Money</th><td>6</td>
-		</tr>
-		<tr>
-			<th>A New Page</th><td>7</td>
-		</tr>
-		<tr>
-			<th>Search and Deploy</th><td>8</td>
-		</tr>
-		<tr>
-			<th>E-Mail from Bill</th><td>9</td>
-		</tr>
-		<tr>
-			<th>Bytes and Chips</th><td>10</td>
-</table>
-
-<p>Today, for better and for worse, the Internet is a part of all of our lives. But it wasn’t always so. This week, we’re bringing you pieces from the early days of tech culture, when going online was a novelty and kids still played outside. In “My First Flame,” from 1994, John Seabrook describes his first experience with online insults and trolling (“in any other medium, these words would be, literally, unspeakable”); he also undertakes an electronic correspondence with Bill Gates, in “E-Mail from Bill.” (“We were intimate in a curious way, in the sense of being wired into each other’s minds, but our contact was elaborately stylized, like ballroom dancing.”) In “Virtual Love,” from 1997, Meghan Daum experiments with Internet dating, despite not being “what most people would call a ‘computer person.’ ” John Heilemann, John Cassidy, and Michael Specter offer early profiles of Steve Jobs, Mark Zuckerberg, and Larry Page and Sergey Brin, respectively. Erik Larson recounts the story of iVillage, the Internet company whose two female co-founders, Nancy Evans and Candice Carpenter, became unimaginably rich through an I.P.O., despite being “neither ‘Web heads’ nor computer geeks,” signalling a new era in tech. Lauren Collins explores a new form of self-expression—the clever naming of one’s Wi-Fi network. Nicholson Baker uses a Kindle for the first time and wonders if a device could ever be better than a book. Finally, in a Talk of the Town story, from 1977, Anthony Hiss visits an acquaintance in California with a new hobby: assembling his own personal computer. Eventually, his acquaintance predicts, people will “start hooking their machines in with their friends’ machines, and people will get on nets of computers, which could mean you could vote or buy something while sitting at your own computer keyboard.” He notes that “if the electricity fails, the kids will be in trouble.” He didn’t know the half of it.</p><hr>
-
-<p><b><u>“My First Flame”</b></u></p>
-
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-940606_ra612.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by Jonathan Elderfield / Liaison / Getty</small></p>
-
-<p>“I got flamed for the first time a couple of months ago. To flame, according to ‘Que’s Computer User’s Dictionary,’ is ‘to lose one’s self-control and write a message that uses derogatory, obscene, or inappropriate language.’ ”</p><hr>
-
-<p><b><u>“Virtual Love”</b></u></p>
-
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-970825_ra610.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by James Keyser / The LIFE Images Collection / Getty</small></p>
-
-<p>“Thanks to the computer, I was involved in a well-defined courtship, a neat little space in which he and I were both safe to express the panic and the fascination of our mutual affection.”</p><hr>
-
-<p><b><u>“The Perceptionist”</b></u></p>
-
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-970908_ra613.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by Michael L. Abramson / Getty</small></p>
-
-<p>“Steve Jobs’s mastery of perception has long been known to his allies and his detractors alike as his ‘reality-distortion field’—an uncanny ability, through enthusiasm, charisma, and intimidation, to make people see what he wants them to see.”</p><hr>
-
-<p><b><u>“Me Media”</b></u></p>
-
-<p>“The growth of sites like Facebook and MySpace reflects a dramatic shift in how young people view the Internet.”</p><hr>
-
-<p><b><u>“The Tao of Wi-Fi”</b></u></p>
-
-<p>“Wireless names can act as welcome mats, luring their beholder into a store or a discussion, or as gargoyles, patrolling a patch of virtual turf.”</p><hr>
-
-<p><b><u>“Free Money”</b></u></p>
-
-<p>“A company as ethereal as air, with deep losses, few physical assets, little proprietary technology, extravagant rates of spending, a high employee ‘burn rate,’ and powerful emerging competitors, had accomplished one of the most successful I.P.O.s ever.”</p><hr>
-
-<p><b><u>“A New Page”</b></u></p>
-
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-090803_r18587_p646.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by Gus Powell</small></p>
-
-<p>“Here’s what you buy when you buy a Kindle book. You buy the right to display a grouping of words in front of your eyes for your private use with the aid of an electronic display device approved by Amazon.”</p><hr>
-
-<p><b><u>“Search and Deploy”</b></u></p>
-
-<p>“At the age of twenty-seven, Lawrence Page runs—with a fellow former Stanford graduate student, Sergey Brin—a small company, based in Mountain View, California, named Google, which has become the default search engine of the digital in-crowd.”</p><hr>
-
-<p><b><u>“E-Mail from Bill”</b></u></p>
-
-<p><img src="C:\Users\rjbea\Documents\DHDK Bologna\Year 1\4. Information Modelling and Web Technologies\imgs\Stories/Sunday-Reading-940110_r27976.jpg" alt="Computer pic" height="400"><br>
-<small>Photograph by Alan Levenson / The LIFE Images Collection / Getty</small></p>
-
-<p>“Sitting at my computer one day, I realized that I could try to communicate with Bill Gates, the chairman and co-founder of the software giant Microsoft, on the information highway.”</p><hr>
-
-<p><b><u>“Bytes and Chips”</b></u></p>
-
-<p>“In just a matter of weeks, a couple of men in their twenties from Los Altos, California will start selling Apple II—a fully assembled briefcase-size unit, with a large memory and a keyboard, that can play any number of computer games, draw pictures on your color TV, and operate like any other computer.”<p><hr>
-
-<p><i><a href="https://twitter.com/erinoverbey">Erin Overbey</a> is the chief archivist of The New Yorker. She has been an archivist at the magazine since 1995.</i><p>
-
-<p><i><a href="https://www.newyorker.com/contributors/joshua-rothman">Joshua Rothman</a> is The New Yorker’s archive editor. He is also a frequent contributor to newyorker.com, where he writes about books and ideas.</i></p>
 	</body>
 </html>
