@@ -1,285 +1,107 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Website experiments</title>
-		<style type="text/css">
-			
-		@font-face {
-			font-family: NewYorker;
-			src: url(NY%20Irvin.ttf);
-		}
-		@font-face {
-			font-family: Regular;
-			src: url(ACaslonPro-Regular.otf);
-		}
-		@font-face {
-			font-family: BoldItalic;
-			src: url(ACaslonPro-BoldItalic.otf);
-		}@font-face {
-			font-family: Italic ;
-			src: url(ACaslonPro-Italic.otf);
-		}
-		
-		.container {
-			display: grid;
-			width: 25cm;
-			height: auto;
-			margin-left: auto;
-			margin-right:auto;
-			grid-template-areas: 	"head head"
-									"intro intro"
-									"st1 st2"
-									"st3 st4"
-									"st5 st6"
-									"st7 st8"
-									"st9 st10"
-									"foot foot";
-			grid-template-rows: auto auto auto auto auto auto auto auto;
-			grid-template-columns: 50% 50%;
-		}
-		
-		#banner {
-			grid-area: head;
-			margin: 0mm;
-			padding: 3mm;
-		}
-		
-		#intro {
-			grid-area: intro;
-			margin:0mm;
-			padding: 2.5mm;
-			border: 3mm solid rgb(242, 242, 242);
-			padding: 3mm;
-		}
-		
-		#story1 {
-			grid-area: st1;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(230, 242, 255);
-		}
-		#story2 {
-			grid-area: st2;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(242, 242, 242);
-		}
-		#story3 {
-			grid-area: st3;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(242, 242, 242);
-		}
-		#story4 {
-			grid-area: st4;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(230, 242, 255);
-		}
-		#story5 {
-			grid-area: st5;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(230, 242, 255);
-		}
-		#story6 {
-			grid-area: st6;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(242, 242, 242);
-		}
-		#story7 {
-			grid-area: st7;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(242, 242, 242);
-		}
-		#story8 {
-			grid-area: st8;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(230, 242, 255);
-		}
-		#story9 {
-			grid-area: st9;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(230, 242, 255);
-		}
-		#story10 {
-			grid-area: st10;
-			margin:2.5mm;
-			padding: 5mm;
-			align-items:center;
-			background-color: rgb(242, 242, 242);
-		}
-		#foot {
-			grid-area: foot;
-			margin: 0mm;
-			padding: 3mm;
-			align-items:center;
-		}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!--metadata tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrint-to-fit=no">
+	<title>TITLE PLACEHOLDER</title>
 	
-		.titlemain {
-			font-family: NewYorker, sans-serif;
-			text-align: center; 
-			font-size: 25pt;
-			font-weight: 800;
-			color: rgb(35, 41, 188);
-			font-variant: small-caps;
-			font-stretch: ultra-condensed;
-		}
-		
-		.title {
-			font-family: NewYorker, sans-serif;
-			text-align: center; 
-			font-size: 45pt;
-			font-weight: 400;
-			color: rgb(35, 41, 188);
-			font-variant: small-caps;
-		}
-		
-		.writeranddate {
-			font-family:"Franklin Gothic Medium", sans-serif;
-			text-align: center;
-			font-size: 12pt;
-			font-weight: 500;
-			text-align: centre;
-		}
-		
-		.text {
-			font-family: Regular, "Calisto MT", "Georgia", serif;
-			font-size: 14pt;
-			font-weight: 300;
-		}
-		
-		.photocap {
-			font-family: "Franklin Gothic Medium", sans-serif;
-			color: rgb(160,160,160);
-			font-size: 12pt;
-			font-weight: 500;
-			text-align: center;
-		}
-		
-		.storytitle {
-			font-family: NewYorker, sans-serif;
-			font-variant: small-caps;
-			font-size: 24pt;
-			color: rgb(35, 41, 188);
-			text-align: center;
-		}
-		
-		.authorinfo {
-			font-family: Italic, serif;
-			font-size: 10pt;
-			font-weight: 200;
-			text-align: center;
-		}
-				
-		.photolayout {
-			text-align:center;
-		}
-		
-		.dropcap::first-letter {
-			font-family: NewYorker;
-			font-size: 450%;
-			color: rgb(35, 41, 188);
-			padding-right: 4mm;
-			display: inline-block;
-			float: left;
-		}
-		
-		</style>
-	</head>
-	<body class="container">
-<div id="banner"><h1 class="titlemain">The<br>New Yorker</h1>
-<h2 class="title">Sunday Reading: The Birth of Tech</h2>
+	<!--bootstrap information-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+	<!--project css and javascript files-->
+	<link rel="stylesheet" href="INSERT DEFAULT STYLESHEET" id="INSERT DEFAULT STYLESHEET ID">
+	<script src="INSERT JAVASCRIPT"></script>
+</head>
 
-<p class="writeranddate">By <a href="https://twitter.com/erinoverbey">Erin Overbey</a> and <a href="https://www.newyorker.com/contributors/joshua-rothman">Joshua Rothman</a>, <i>January 27, 2019</i></p></div>
+<body>
+	<header>
+	<!--main navbar-->
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container">
+			<div id="PROJECT TITLE">
+				<a class="navbar-brand" href="index.html">PROJECT TITLE</a>
+			</div>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expander="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Editions</a>
+						<div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Edition1</a>
+							<a class="dropdown-item" href="#">Edition2</a>
+							<a class="dropdown-item" href="#">Edition3</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Documentation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Disclaimer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Editors</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--CSS styles navbar-->
+	<ul class="nav justify-content-center navbar-menu" id="cssnavbar">
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme3</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme4</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme5</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme6</a>
+		</li>
+	</ul>
+	</header>
+	
+	<!--jumbotron-->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container" style="background-image: url("#")">
+			<h1>PROJECT TITLE</h1>
+			<p>SOME INTRODUCTORY TEXT</p>
+		</div>
+	</div>
+	
+	<!--introduction to the magazine-->
+	<div class="textsection" id="magazineIntro">
+		<p>Text</p>
+		<p>Text</p>
+		<p>Text</p>
+		<p>Text</p>
+		<p>Text</p>
+	</div>
+	
+	<!--footer-->
+	<footer class="border-top">
+		<div class="small text-center text-muted fst-italic">
+			<p>&copy; PROJECT TITLE</p>
+		</div>
+	</footer>
 
-<div id="intro"><p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-The-Internet.jpg" alt="Computer pic" height="300"><br>
-<small>Photograph by Jonathan Elderfield / Liaison / Getty</small></p>
-
-<p class="text dropcap">Today, for better and for worse, the Internet is a part of all of our lives. But it wasn’t always so. This week, we’re bringing you pieces from the early days of tech culture, when going online was a novelty and kids still played outside. In “My First Flame,” from 1994, John Seabrook describes his first experience with online insults and trolling (“in any other medium, these words would be, literally, unspeakable”); he also undertakes an electronic correspondence with Bill Gates, in “E-Mail from Bill.” (“We were intimate in a curious way, in the sense of being wired into each other’s minds, but our contact was elaborately stylized, like ballroom dancing.”) In “Virtual Love,” from 1997, Meghan Daum experiments with Internet dating, despite not being “what most people would call a ‘computer person.’ ” John Heilemann, John Cassidy, and Michael Specter offer early profiles of Steve Jobs, Mark Zuckerberg, and Larry Page and Sergey Brin, respectively. Erik Larson recounts the story of iVillage, the Internet company whose two female co-founders, Nancy Evans and Candice Carpenter, became unimaginably rich through an I.P.O., despite being “neither ‘Web heads’ nor computer geeks,” signalling a new era in tech. Lauren Collins explores a new form of self-expression—the clever naming of one’s Wi-Fi network. Nicholson Baker uses a Kindle for the first time and wonders if a device could ever be better than a book. Finally, in a Talk of the Town story, from 1977, Anthony Hiss visits an acquaintance in California with a new hobby: assembling his own personal computer. Eventually, his acquaintance predicts, people will “start hooking their machines in with their friends’ machines, and people will get on nets of computers, which could mean you could vote or buy something while sitting at your own computer keyboard.” He notes that “if the electricity fails, the kids will be in trouble.” He didn’t know the half of it.</p></div>
-
-<div id="story1"><p class="storytitle"><b>My First Flame</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-940606_ra612.jpg" alt="Computer pic" height="260"><br>
-<small>Photograph by Jonathan Elderfield / Liaison / Getty</small></p>
-
-<p class="text">“I got flamed for the first time a couple of months ago. To flame, according to ‘Que’s Computer User’s Dictionary,’ is ‘to lose one’s self-control and write a message that uses derogatory, obscene, or inappropriate language.’ ”</p></div>
-
-<div id="story2"><p class="storytitle"><b>Virtual Love</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-970825_ra610.jpg" alt="Computer pic" height="300"><br>
-<small>Photograph by James Keyser / The LIFE Images Collection / Getty</small></p>
-
-<p class="text">“Thanks to the computer, I was involved in a well-defined courtship, a neat little space in which he and I were both safe to express the panic and the fascination of our mutual affection.”</p></div>
-
-<div id="story3"><p class="storytitle"><b>The Perceptionist</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-970908_ra613.jpg" alt="Computer pic" height="260"><br>
-<small>Photograph by Michael L. Abramson / Getty</small></p>
-
-<p class="text">“Steve Jobs’s mastery of perception has long been known to his allies and his detractors alike as his ‘reality-distortion field’—an uncanny ability, through enthusiasm, charisma, and intimidation, to make people see what he wants them to see.”</p></div>
-
-<div id="story4"><p class="storytitle"><b>Me Media</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Mark%20Zucker.jpg" alt="Computer pic" height="220"><br>
-<small>Photograph by Jonathan Elderfield / Getty</small></p>
-
-<p class="text">“The growth of sites like Facebook and MySpace reflects a dramatic shift in how young people view the Internet.”</p></div>
-
-<div id="story5"><p class="storytitle"><b>The Tao of Wi-Fi</b></p>
-
-<p class="text">“Wireless names can act as welcome mats, luring their beholder into a store or a discussion, or as gargoyles, patrolling a patch of virtual turf.”</p></div>
-
-<div id="story6"><p class="storytitle"><b>Free Money</b></p>
-
-<p class="text">“A company as ethereal as air, with deep losses, few physical assets, little proprietary technology, extravagant rates of spending, a high employee ‘burn rate,’ and powerful emerging competitors, had accomplished one of the most successful I.P.O.s ever.”</p></div>
-
-<div id="story7"><p class="storytitle"><b>A New Page</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-090803_r18587_p646.jpg" alt="Computer pic" height="200"><br>
-<small>Photograph by Gus Powell</small></p>
-
-<p class="text">“Here’s what you buy when you buy a Kindle book. You buy the right to display a grouping of words in front of your eyes for your private use with the aid of an electronic display device approved by Amazon.”</p></div>
-
-<div id="story8"><p class="storytitle"><b>Search and Deploy</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Google.jpg" alt="Computer pic" height="220"><br>
-<small>Photograph by Jonathan Elderfield / Getty</small></p>
-
-<p class="text">“At the age of twenty-seven, Lawrence Page runs—with a fellow former Stanford graduate student, Sergey Brin—a small company, based in Mountain View, California, named Google, which has become the default search engine of the digital in-crowd.”</p></div>
-
-<div id="story9"><p class="storytitle"><b>E-Mail from Bill</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Sunday-Reading-940110_r27976.jpg" alt="Computer pic" height="300"><br>
-<small>Photograph by Alan Levenson / The LIFE Images Collection / Getty</small></p>
-
-<p class="text">“Sitting at my computer one day, I realized that I could try to communicate with Bill Gates, the chairman and co-founder of the software giant Microsoft, on the information highway.”</p></div>
-
-<div id="story10"><p class="storytitle"><b>Bytes and Chips</b></p>
-
-<p class="photocap photolayout"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/Apple%20II.jpg" alt="Computer pic" height="270"><br>
-<small>Photograph by Jonathan Elderfield / Getty</small></p>
-
-<p class="text">“In just a matter of weeks, a couple of men in their twenties from Los Altos, California will start selling Apple II—a fully assembled briefcase-size unit, with a large memory and a keyboard, that can play any number of computer games, draw pictures on your color TV, and operate like any other computer.”<p></div>
-
-<div id="foot"><p class="authorinfo"><i><a href="https://twitter.com/erinoverbey">Erin Overbey</a> is the chief archivist of The New Yorker. She has been an archivist at the magazine since 1995.</i><br>
-
-<a href="https://www.newyorker.com/contributors/joshua-rothman">Joshua Rothman</a> is The New Yorker’s archive editor. He is also a frequent contributor to newyorker.com, where he writes about books and ideas.</i></p>
-
-<p class="photocap photolayout"><a href="https://www.newyorker.com/"><img src="https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/the-new-yorker-logo%20crop.jpg" alt="Computer pic" height="100"></a></p>
-</div>
-	</body>
 </html>
