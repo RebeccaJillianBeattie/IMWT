@@ -16,7 +16,7 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	
 	<!--project css and javascript files-->
-	<link rel="stylesheet" href="DafaultCSS.css" id="DefaultCSS">
+	<link rel="stylesheet" href="DefaultCSS.css" id="DefaultCSS">
 	<script src="javascript.js"></script>
 </head>
 
@@ -97,6 +97,7 @@
 		<p>Text</p>
 	</div>
 	
+	<article>
 	<div class="container" id="texts">
 	<div class="row clearfix">
 			<div class="col-md-3">
@@ -149,11 +150,13 @@
 					</div>
 				</div>
 			</div>
-			</div>
+		</div>
 			<div class="col-md-9">
 				<div id="file"></div>
 			</div>
-		</div>	
+		</div>
+		</div>
+		</article>
 	</div>
 	
 	<!--footer-->
@@ -250,6 +253,7 @@
 				elements[i].id = prefix + "-" + id++
 			}
 		}
+		
 		function filltabs(){
 			filltab("#file .imagery","list-imagery","#imagery")
 			filltab("#file .song","list-song","#song")
