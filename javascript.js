@@ -16,6 +16,13 @@ $('.carousel').carousel({
 function showEnglishSappho1() {
 	$('#SapphoTextGreek1').css('display', 'none');
 	$('#SapphoTextEnglish1').css('display', 'block');
+	$('.stanza1').css('display', 'block');
+	$('.stanza2').css('display', 'block');
+	$('.stanza3').css('display', 'block');
+	$('.stanza4').css('display', 'block');
+	$('.stanza5').css('display', 'block');
+	$('.stanza6').css('display', 'block');
+	$('.stanza7').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
 
