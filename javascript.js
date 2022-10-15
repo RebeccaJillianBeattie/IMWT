@@ -3,33 +3,38 @@ function disclaimer() {
 	alert("The purpose of this website is to explore various types of typographic and layout styles for text documents, as an end-of-course project for the Information Modelling and Web Technologies module of the Masters Degree in Digital Humanities and Digital Knowledge at the University of Bologna, 2021-22, taught by Professor Fabio Vitali.\nThe documents contained in this web site have been selected for their length and complexity. Their publication here is not intended to be an alternative to, or to replace, their original locations, all of which are highlighted in the project's documentation.\nAll copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 © Clio & Erato");
 }
 
-//Edition1: Sappho of Ancient Greece
+//Edition1: Sappho of Lesbos
 //Poem1
+
+//If Greek version is showing, hide it
+//If index is showing, hide it
+function showEnglishSappho1() {
+	var x = document.getElementById("SapphoTextGreek1")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
+}
+
+//If Greek version is hidden, show it
+//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho1() {
-	var x = document.getElementById("SapphoTextGreek1");
-	var y = document.getElementById("SapphoTextEnglish1");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.sappho1').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
+	var x = document.getElementById("SapphoTextGreek1")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "none") 
+		[x.style.display = "block"];
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
 }
 
-function hideGreekSappho1(){
-	var x = document.getElementById("SapphoGreekText1");
-	var y = document.getElementById("SapphoTextEnglish1");
-	$('.sappho1').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
-	x.style.display = "none";
-	y.removeAttribute("class");
-	$('.indexcompare').css('display', 'none');
-}
-
+//If index list is hidden, show it
 function compareSappho1() {
-	var x = document.getElementById("SapphoGreekText1");
-	var y = document.getElementById("SapphoEnglishText1");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.indexcompare').css('display', 'block');
+	x = document.getElementById("SapphoIndex")
+	if (x.style.display == "none")
+		[x.style.display = "block"];
 }
 
 function showSappho11() {
@@ -62,31 +67,36 @@ function showSappho17() {
 }
 
 //Poem2
+
+//If Greek version is showing, hide it
+//If index is showing, hide it
+function showEnglishSappho2() {
+	var x = document.getElementById("SapphoTextGreek2")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
+}
+
+//If Greek version is hidden, show it
+//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho2() {
-	var x = document.getElementById("SapphoTextGreek2");
-	var y = document.getElementById("SapphoTextEnglish2");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.sappho2').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
+	var x = document.getElementById("SapphoTextGreek2")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "none") 
+		[x.style.display = "block"];
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
 }
 
-function hideGreekSappho2(){
-	var x = document.getElementById("SapphoGreekText2");
-	var y = document.getElementById("SapphoTextEnglish2");
-	$('.sappho2').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
-	x.style.display = "none";
-	y.removeAttribute("class");
-	$('.indexcompare').css('display', 'none');
-}
-
+//If index list is hidden, show it
 function compareSappho2() {
-	var x = document.getElementById("SapphoGreekText2");
-	var y = document.getElementById("SapphoEnglishText2");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.indexcompare').css('display', 'block');
+	x = document.getElementById("SapphoIndex")
+	if (x.style.display == "none")
+		[x.style.display = "block"];
 }
 
 function showSappho21() {
@@ -115,31 +125,36 @@ function showSappho26() {
 }
 
 //Poem3
+
+//If Greek version is showing, hide it
+//If index is showing, hide it
+function showEnglishSappho3() {
+	var x = document.getElementById("SapphoTextGreek3")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
+}
+
+//If Greek version is hidden, show it
+//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho3() {
-	var x = document.getElementById("SapphoTextGreek3");
-	var y = document.getElementById("SapphoTextEnglish3");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.sappho3').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
+	var x = document.getElementById("SapphoTextGreek3")
+	var y = document.getElementById("SapphoIndex")
+	if (x.style.display == "none") 
+		[x.style.display = "block"];
+	if (x.style.display == "block")
+		[x.style.display = "none"];
+	if (y.style.display == "block")
+		[y.style.display = "none"];
 }
 
-function hideGreekSappho3(){
-	var x = document.getElementById("SapphoGreekText3");
-	var y = document.getElementById("SapphoTextEnglish3");
-	$('.sappho3').css('display', 'block');
-	$('.indexcompare').css('display', 'none');
-	x.style.display = "none";
-	y.removeAttribute("class");
-	$('.indexcompare').css('display', 'none');
-}
-
+//If index list is hidden, show it
 function compareSappho3() {
-	var x = document.getElementById("SapphoGreekText3");
-	var y = document.getElementById("SapphoEnglishText3");
-	x.style.display = "block";
-	y.classList.add("col-sm-6", "col-md-5", "col-lg-6");
-	$('.indexcompare').css('display', 'block');
+	x = document.getElementById("SapphoIndex")
+	if (x.style.display == "none")
+		[x.style.display = "block"];
 }
 
 function showSappho31() {
