@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!--metadata tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrint-to-fit=no">
+	<title>Clio &amp; Erato</title>
+	
+	<!--bootstrap information-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+	<!--project css and javascript files-->
+	<link rel="stylesheet" href="INSERT DEFAULT STYLESHEET" id="INSERT DEFAULT STYLESHEET ID">
+	<script src="javascript.js"></script>
+</head>
+
+<body>
+	<header class="header sticky-top">
+	<!--main navbar-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="container">
+			<div id="ClioAndErato">
+				<a class="navbar-brand" href="index.html">Clio &amp; Erato</a>
+			</div>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expander="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Editions</a>
+						<div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="AncientGreece.html">Edition1</a>
+							<a class="dropdown-item" href="#">Edition2</a>
+							<a class="dropdown-item" href="#">Edition3</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Documentation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Editors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" onclick="disclaimer()">Disclaimer</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--CSS styles navbar-->
+	<ul class="nav justify-content-center navbar-menu navbar-light bg-white" id="cssnavbar">
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme3</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme4</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme5</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link sec-nav" onclick="#">Theme6</a>
+		</li>
+	</ul>
+	</header>
+	
+	<!--jumbotron-->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container" style="background-image: url(PlaceHolderImage.jpg); padding-top: 10%; padding-bottom: 10%;  background-size: cover;">
+			<h1>Sappho of Ancient Greece</h1>
+			<p>SOME TEXT</p>
+		</div>
+	</div>
+	<hr>
+	
+	<!--introduction to the edition-->
+	<div class="textsection" id="editionIntro">
+		<p>Text</p>
+		<p>Text</p>
+		<p>Text</p>
+		<p>Text</p>
+	</div>
+	
+	<div class="row clearfix">
+			<div class="col-md-3">
+				<div class="row clearfix border p-2">
+					<div class="col-md-12">
+						<h3>Poems</h3>
+						<ul id="list">
+						</ul>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-6">
+						<form role="form">
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showasides" class="show">Show imagery</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showkeywords" class="show">Show song-like quality</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showspeeches" class="show">Show first-person</label></div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row clearfix mt-4">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+						  <li class="nav-item">
+							<a class="nav-link" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="keyword-tab" data-toggle="tab" href="#keywords" role="tab" aria-controls="view" aria-selected="true">Song-like quality</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="speeches-tab" data-toggle="tab" href="#speeches" role="tab" aria-controls="home" aria-selected="false">First-person</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="sentenceContent">
+							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="asides" role="tabpanel" aria-labelledby="asides-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="speeches" role="tabpanel" aria-labelledby="speeches-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="quotes" role="tabpanel" aria-labelledby="quotes-tab">
+								<ul class="minimal"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-9">
+				<div id="file"></div>
+			</div>
+		</div>	
+	</div>
+	
+	<!--footer-->
+	<footer class="border-top">
+		<div class="small text-center text-muted fst-italic">
+			<p>&copy; Clio &amp; Erato</p>
+		</div>
+	</footer>
+	
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		String.prototype.tpl = function(o) { 
+			var r = this ; 
+			for (var i in o) { 
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			} 
+			return r 
+		}
+		
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		
+		$(document).ready(main);
+
+		function main() {
+			$.ajax({
+				method: 'GET',
+				url: 'FileListSappho.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
+
+</body>
+</html>
