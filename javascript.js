@@ -10,11 +10,13 @@ function disclaimer() {
 //If index is showing, hide it
 function showEnglishSappho1() {
 	$('#SapphoTextGreek1').css('display', 'none');
+	$('#SapphoTextEnglish1').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
 function showGreekSappho1() {
+	$('#SapphoTextEnglish1').css('display', 'block');
 	$('#SapphoTextGreek1').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
@@ -59,11 +61,13 @@ function showSappho17() {
 //If index is showing, hide it
 function showEnglishSappho2() {
 	$('#SapphoTextGreek2').css('display', 'none');
+	$('#SapphoTextEnglish2').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
 function showGreekSappho2() {
+	$('#SapphoTextEnglish2').css('display', 'block');
 	$('#SapphoTextGreek2').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
@@ -104,11 +108,13 @@ function showSappho26() {
 //If index is showing, hide it
 function showEnglishSappho3() {
 	$('#SapphoTextGreek3').css('display', 'none');
+	$('#SapphoTextEnglish3').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
 function showGreekSappho3() {
+	$('#SapphoTextEnglish3').css('display', 'block');
 	$('#SapphoTextGreek2').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
