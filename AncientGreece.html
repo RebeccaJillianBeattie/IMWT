@@ -135,18 +135,13 @@
 
 						<!-- Tab panes -->
 						<div class="tab-content" id="sentenceContent">
-							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
-							</div>
-							<div class="tab-pane myBorder myBorder-notop" id="asides" role="tabpanel" aria-labelledby="asides-tab">
+							<div class="tab-pane myBorder myBorder-notop" id="imagery" role="tabpanel" aria-labelledby="imagery-tab">
 								<ul class="minimal"></ul>
 							</div>
-							<div class="tab-pane myBorder myBorder-notop" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
+							<div class="tab-pane myBorder myBorder-notop" id="song" role="tabpanel" aria-labelledby="song-tab">
 								<ul class="minimal"></ul>
 							</div>
-							<div class="tab-pane myBorder myBorder-notop" id="speeches" role="tabpanel" aria-labelledby="speeches-tab">
-								<ul class="minimal"></ul>
-							</div>
-							<div class="tab-pane myBorder myBorder-notop" id="quotes" role="tabpanel" aria-labelledby="quotes-tab">
+							<div class="tab-pane myBorder myBorder-notop" id="firstperson" role="tabpanel" aria-labelledby="firstperson-tab">
 								<ul class="minimal"></ul>
 							</div>
 						</div>
@@ -190,10 +185,10 @@
 				method: 'GET',
 				url: 'https://rebeccajillianbeattie.github.io/IMWT/FileListSappho.json',
 				success: function(d) {
-					for (var i=0; i<d.length; i++) {
+					for (var i=0; i < d.length; i++) {
 						$('#list').append(listItemTpl.tpl({
-							url:d[i].url, 
-							label: d[i].label}))
+						url: d[i].url, 
+						label: d[i].label}))
 					}	
 				},
 				error: function() {
