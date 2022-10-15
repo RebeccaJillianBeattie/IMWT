@@ -9,3 +9,15 @@
 .text-firstperson {
     background-color: #FFF04D;
 }
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
