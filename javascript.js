@@ -15,15 +15,8 @@ $('.carousel').carousel({
 //If index is showing, hide it
 function showEnglishSappho1() {
 	$('#SapphoTextGreek1').css('display', 'none');
-	$('#SapphoTextEnglish1').css('display', 'block');
-	$('.stanza1').css('display', 'block');
-	$('.stanza2').css('display', 'block');
-	$('.stanza3').css('display', 'block');
-	$('.stanza4').css('display', 'block');
-	$('.stanza5').css('display', 'block');
-	$('.stanza6').css('display', 'block');
-	$('.stanza7').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
+	$('.sappho1').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
