@@ -12,10 +12,12 @@
     <button class="buttonShowText" onclick="showGreekSappho1()" type="button">Show the original Greek text</button>
     <button class="buttonHideText" onclick="hideGreekSappho1()" type="button">Hide the original Greek text</button>
     <button class="buttonCompText" onclick="compareSappho1()" type="button">Compare the texts</button>
+	<hr>
     <div class="indexcompare" id="indexSappho">
         <p><b>Sections</b></p>
         <p>
             <ol>
+				<li onclick="ShowAllSappho()">See all</li>
                 <li onclick="showSappho11()">Stanza One</li>
                 <li onclick="showSappho12()">Stanza Two</li>
                 <li onclick="showSappho13()">Stanza Three</li>
@@ -27,9 +29,10 @@
             </ol>
         </p>
     </div>
+	
     <div class="container mt-2">
         <div class="row">
-            <div id="SapphoTextEnglish1">
+            <div class="col-md-4 col-sm-12" id="SapphoTextEnglish1">
                 <div class="sappho1 stanza1">
                     <p><span class="imagery">Glittering-throned</span>, undying Aphrodite,<br>
 						<span class="imagery">Wile-weaving daughter of high Zeus</span>, <span class="firstperson">I pray</span> thee,<br>
@@ -80,7 +83,7 @@
                 </div>
             </div>
 			
-            <div id="SapphoTextGreek1" class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+            <div id="SapphoTextGreek1" class="col-sm-12 col-md-4 offset-md-2 offset-lg-0">
                 <div class="sappho1 stanza1">
                     <p>ποικιλόθρον' ἀθανάτ Ἀφρόδιτα,
 						παῖ Δίος δολόπλοκε, λίσσομαί σε,
