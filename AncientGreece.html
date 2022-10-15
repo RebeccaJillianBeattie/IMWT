@@ -97,6 +97,7 @@
 		<p>Text</p>
 	</div>
 	
+	<div class="container" id="texts">
 	<div class="row clearfix">
 			<div class="col-md-3">
 				<div class="row clearfix border p-2">
@@ -153,6 +154,7 @@
 			</div>
 		</div>	
 	</div>
+	</div>
 	
 	<!--footer-->
 	<footer class="border-top">
@@ -176,7 +178,7 @@
 			return r 
 		}
 		
-		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		var listItemTpl = `<li><a href='#texts' onclick='load("$url")'>$label</a></li>`
 		
 		$(document).ready(main);
 
