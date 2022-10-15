@@ -3,11 +3,6 @@ function disclaimer() {
 	alert("The purpose of this website is to explore various types of typographic and layout styles for text documents, as an end-of-course project for the Information Modelling and Web Technologies module of the Masters Degree in Digital Humanities and Digital Knowledge at the University of Bologna, 2021-22, taught by Professor Fabio Vitali.\nThe documents contained in this web site have been selected for their length and complexity. Their publication here is not intended to be an alternative to, or to replace, their original locations, all of which are highlighted in the project's documentation.\nAll copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 © Clio & Erato");
 }
 
-//Carousel on welcome page
-$('.carousel').carousel({
-  interval: 2000
-})
-
 //Edition1: Sappho of Lesbos
 //Poem1
 
@@ -16,7 +11,7 @@ $('.carousel').carousel({
 function showEnglishSappho1() {
 	$('#SapphoTextGreek1').css('display', 'none');
 	$('#indexSappho').css('display', 'none');
-	$('.sappho1').css('display', 'block');
+	$('#SapphoTextEnglish1').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
@@ -66,8 +61,8 @@ function showSappho17() {
 //If index is showing, hide it
 function showEnglishSappho2() {
 	$('#SapphoTextGreek2').css('display', 'none');
-	$('#SapphoTextEnglish2').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
+	$('#SapphoTextEnglish2').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
@@ -113,8 +108,8 @@ function showSappho26() {
 //If index is showing, hide it
 function showEnglishSappho3() {
 	$('#SapphoTextGreek3').css('display', 'none');
-	$('#SapphoTextEnglish3').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
+	$('#SapphoTextEnglish3').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
