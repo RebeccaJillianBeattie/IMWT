@@ -126,7 +126,7 @@
 							<a class="nav-link" id="imagery-tab" data-toggle="tab" href="#imagery" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link" id="song-tab" data-toggle="tab" href="#song" role="tab" aria-controls="view" aria-selected="true">Song-like quality</a>
+							<a class="nav-link" id="song-tab" data-toggle="tab" href="#song" role="tab" aria-controls="view" aria-selected="true">Song quality</a>
 						  </li>
 						  <li class="nav-item">
 							<a class="nav-link" id="firstperson-tab" data-toggle="tab" href="#firstperson" role="tab" aria-controls="home" aria-selected="false">First-person</a>
@@ -188,10 +188,12 @@
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: 'https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/FileListSappho.json',
+				url: 'https://github.com/RebeccaJillianBeattie/IMWT/blob/main/FileListSappho.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
-						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+						$('#list').append(listItemTpl.tpl({
+							url:d[i].url, 
+							label: d[i].label}))
 					}	
 				},
 				error: function() {
