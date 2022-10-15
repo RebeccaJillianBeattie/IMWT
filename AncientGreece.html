@@ -82,7 +82,7 @@
 	
 	<!--jumbotron-->
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container" style="background-image: url(SapphoImage.jpg); padding-top: 10%; padding-bottom: 10%;  background-size: cover;">
+		<div class="container" style="background-image: url(SapphoImage.jpg); padding-top: 15%; padding-bottom: 15%;  background-size: cover;">
 			<h1>Sappho of Lesbos</h1>
 			<p>SOME TEXT</p>
 		</div>
@@ -101,26 +101,24 @@
 	<article>
 		<div class="container" id="texts">
 		
-			<div class="row clearfix">
-				<div class="col-md-3">
-					<div class="row clearfix border p-2">
-						<div class="col-md-12">
-							<h3>Poems</h3>
-							<ul id="list"></ul>
-						</div>
-					</div>
+			<div class="row">
+				<div class="col-5 col-sm-4">
+					<div class="metadata">
+						<h3>Select Poem:</h3>
+						<ul id="list"></ul>
 				
-					<div class="row clearfix mt-4">
-						<div class="col-md-4">
+					<div class="row mt-4">
+						<h3>Select Metadata:</h3>
+						<div class="col-md-12">
 							<form role="form">
 								<div class="checkbox">
-								<label><input type="checkbox" id="showimagery" class="show">Show imagery</label>
+									<label><input type="checkbox" id="showimagery" class="show">Show imagery</label>
 								</div>
 								<div class="checkbox">
-								<label><input type="checkbox" id="showsong" class="show">Show song quality</label>
+									<label><input type="checkbox" id="showsong" class="show">Show song quality</label>
 								</div>
 								<div class="checkbox">
-								<label><input type="checkbox" id="showfirstperson" class="show">Show first-person</label>
+									<label><input type="checkbox" id="showfirstperson" class="show">Show 1st-person</label>
 								</div>
 							</form>
 						</div>
@@ -130,19 +128,19 @@
 						<div class="col-md-12">
 							<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
 								<li class="nav-item">
-									<a class="nav-link" id="imagery-tab" data-toggle="tab" href="#imagery" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
+									<a class="nav-link active" id="imagery-tab" data-toggle="tab" href="#imagery" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="song-tab" data-toggle="tab" href="#song" role="tab" aria-controls="view" aria-selected="true">Song quality</a>
+									<a class="nav-link" id="song-tab" data-toggle="tab" href="#song" role="tab" aria-controls="home" aria-selected="false">Song quality</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="firstperson-tab" data-toggle="tab" href="#firstperson" role="tab" aria-controls="home" aria-selected="false">First-person</a>
+									<a class="nav-link" id="firstperson-tab" data-toggle="tab" href="#firstperson" role="tab" aria-controls="home" aria-selected="false">1st-person</a>
 								</li>
 							</ul>
 
 							<!-- Tab panes -->
-							<div class="tab-content" id="sentenceContent">
-								<div class="tab-pane myBorder myBorder-notop" id="imagery" role="tabpanel" aria-labelledby="imagery-tab">
+							<div class="tab-content auto" id="sentenceContent">
+								<div class="tab-pane active myBorder myBorder-notop" id="imagery" role="tabpanel" aria-labelledby="imagery-tab">
 									<ul class="minimal"></ul>
 								</div>
 								<div class="tab-pane myBorder myBorder-notop" id="song" role="tabpanel" aria-labelledby="song-tab">
