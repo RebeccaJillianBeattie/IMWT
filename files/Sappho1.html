@@ -9,15 +9,14 @@
 
 <body>
     <h3>Sappho, Poem 1</h3>
-    <button class="buttonShowText" onclick="showGreekSappho1()" type="button">Show the original Greek text</button>
-    <button class="buttonHideText" onclick="hideGreekSappho1()" type="button">Hide the original Greek text</button>
-    <button class="buttonCompText" onclick="compareSappho1()" type="button">Compare the texts</button>
+    <button class="buttonShowText" onclick="showEnglishSappho1()" type="button">English</button>
+    <button class="buttonHideText" onclick="showGreekSappho1()" type="button">Bilingual</button>
+    <button class="buttonCompText" onclick="compareSappho1()" type="button">Bilingual Comparison</button>
 	<hr>
-    <div class="indexcompare" id="indexSappho">
+    <div class="indexcompare" id="indexSappho" style="display:none">
         <p><b>Sections</b></p>
         <p>
             <ol>
-				<li onclick="ShowAllSappho()">See all</li>
                 <li onclick="showSappho11()">Stanza One</li>
                 <li onclick="showSappho12()">Stanza Two</li>
                 <li onclick="showSappho13()">Stanza Three</li>
