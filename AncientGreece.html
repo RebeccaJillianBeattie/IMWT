@@ -188,7 +188,7 @@
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: 'FileListSappho.json',
+				url: 'https://github.com/RebeccaJillianBeattie/IMWT/blob/main/FileListSappho.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
