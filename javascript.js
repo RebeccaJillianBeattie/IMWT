@@ -9,9 +9,9 @@ function disclaimer() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho1() {
+	$('.sappho1').css('display', 'block');
 	$('#SapphoTextGreek1').css('display', 'none');
 	$('#indexSappho').css('display', 'none');
-	$('#SapphoTextEnglish1').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
@@ -61,9 +61,9 @@ function showSappho17() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho2() {
+	$('.sappho2').css('display', 'block');
 	$('#SapphoTextGreek2').css('display', 'none');
 	$('#indexSappho').css('display', 'none');
-	$('#SapphoTextEnglish2').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
@@ -109,9 +109,9 @@ function showSappho26() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho3() {
+	$('.sappho3').css('display', 'block');
 	$('#SapphoTextGreek3').css('display', 'none');
 	$('#indexSappho').css('display', 'none');
-	$('#SapphoTextEnglish3').css('display', 'block');
 }
 
 //If Greek version is hidden, show it
