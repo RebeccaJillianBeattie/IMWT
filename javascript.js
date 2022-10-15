@@ -115,7 +115,7 @@ function showEnglishSappho3() {
 //If Greek version is hidden, show it
 function showGreekSappho3() {
 	$('#SapphoTextEnglish3').css('display', 'block');
-	$('#SapphoTextGreek2').css('display', 'block');
+	$('#SapphoTextGreek3').css('display', 'block');
 	$('#indexSappho').css('display', 'none');
 }
 
