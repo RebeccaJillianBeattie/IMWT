@@ -9,32 +9,19 @@ function disclaimer() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho1() {
-	var x = document.getElementById("SapphoTextGreek1")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek1').css('display', 'none');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
-//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho1() {
-	var x = document.getElementById("SapphoTextGreek1")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "none") 
-		[x.style.display = "block"];
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek1').css('display', 'block');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If index list is hidden, show it
 function compareSappho1() {
-	x = document.getElementById("SapphoIndex")
-	if (x.style.display == "none")
-		[x.style.display = "block"];
+	$('#indexSappho').css('display', 'block');
 }
 
 function showSappho11() {
@@ -71,32 +58,19 @@ function showSappho17() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho2() {
-	var x = document.getElementById("SapphoTextGreek2")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek2').css('display', 'none');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
-//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho2() {
-	var x = document.getElementById("SapphoTextGreek2")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "none") 
-		[x.style.display = "block"];
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek2').css('display', 'block');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If index list is hidden, show it
 function compareSappho2() {
-	x = document.getElementById("SapphoIndex")
-	if (x.style.display == "none")
-		[x.style.display = "block"];
+	$('#indexSappho').css('display', 'block');
 }
 
 function showSappho21() {
@@ -129,32 +103,19 @@ function showSappho26() {
 //If Greek version is showing, hide it
 //If index is showing, hide it
 function showEnglishSappho3() {
-	var x = document.getElementById("SapphoTextGreek3")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek3').css('display', 'none');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If Greek version is hidden, show it
-//If Greek version is showing, hide it, letting user toggle
 function showGreekSappho3() {
-	var x = document.getElementById("SapphoTextGreek3")
-	var y = document.getElementById("SapphoIndex")
-	if (x.style.display == "none") 
-		[x.style.display = "block"];
-	if (x.style.display == "block")
-		[x.style.display = "none"];
-	if (y.style.display == "block")
-		[y.style.display = "none"];
+	$('#SapphoTextGreek2').css('display', 'block');
+	$('#indexSappho').css('display', 'none');
 }
 
 //If index list is hidden, show it
 function compareSappho3() {
-	x = document.getElementById("SapphoIndex")
-	if (x.style.display == "none")
-		[x.style.display = "block"];
+	$('#indexSappho').css('display', 'block');
 }
 
 function showSappho31() {
