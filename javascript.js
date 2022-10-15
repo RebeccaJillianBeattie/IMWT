@@ -24,6 +24,7 @@ function showGreekSappho1() {
 //If index list is hidden, show it
 function compareSappho1() {
 	$('#indexSappho').css('display', 'block');
+	$('#SapphoTextGreek1').css('display', 'block');
 }
 
 function showSappho11() {
@@ -75,6 +76,7 @@ function showGreekSappho2() {
 //If index list is hidden, show it
 function compareSappho2() {
 	$('#indexSappho').css('display', 'block');
+	$('#SapphoTextGreek2').css('display', 'block');
 }
 
 function showSappho21() {
@@ -122,6 +124,7 @@ function showGreekSappho3() {
 //If index list is hidden, show it
 function compareSappho3() {
 	$('#indexSappho').css('display', 'block');
+	$('#SapphoTextGreek3').css('display', 'block');
 }
 
 function showSappho31() {
