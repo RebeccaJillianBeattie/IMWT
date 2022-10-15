@@ -38,7 +38,7 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Editions</a>
 						<div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="AncientGreece.html">Edition1</a>
+							<a class="dropdown-item" href="AncientGreece.html">Ancient Greece</a>
 							<a class="dropdown-item" href="#">Edition2</a>
 							<a class="dropdown-item" href="#">Edition3</a>
 						</div>
@@ -82,7 +82,7 @@
 	
 	<!--jumbotron-->
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container" style="background-image: url(ApolloAndNineMuses1.jpg); padding-top: 10%; padding-bottom: 10%;  background-size: cover;">
+		<div class="container" style="background-image: url(PlaceHolderImage.jpg); padding-top: 10%; padding-bottom: 10%;  background-size: cover;">
 			<h1>Sappho of Ancient Greece</h1>
 			<p>SOME TEXT</p>
 		</div>
@@ -110,11 +110,11 @@
 					<div class="col-md-6">
 						<form role="form">
 							<div class="checkbox"><label>
-								<input type="checkbox" id="showasides" class="show">Show imagery</label></div>
+								<input type="checkbox" id="showimagery" class="show">Show imagery</label></div>
 							<div class="checkbox"><label>
-								<input type="checkbox" id="showkeywords" class="show">Show song-like quality</label></div>
+								<input type="checkbox" id="showsong" class="show">Show song quality</label></div>
 							<div class="checkbox"><label>
-								<input type="checkbox" id="showspeeches" class="show">Show first-person</label></div>
+								<input type="checkbox" id="showfirstperson" class="show">Show first-person</label></div>
 						</form>
 					</div>
 				</div>
@@ -123,13 +123,13 @@
 					<div class="col-md-12">
 						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
 						  <li class="nav-item">
-							<a class="nav-link" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
+							<a class="nav-link" id="imagery-tab" data-toggle="tab" href="#imagery" role="tab" aria-controls="view" aria-selected="true">Imagery</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link" id="keyword-tab" data-toggle="tab" href="#keywords" role="tab" aria-controls="view" aria-selected="true">Song-like quality</a>
+							<a class="nav-link" id="song-tab" data-toggle="tab" href="#song" role="tab" aria-controls="view" aria-selected="true">Song-like quality</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link" id="speeches-tab" data-toggle="tab" href="#speeches" role="tab" aria-controls="home" aria-selected="false">First-person</a>
+							<a class="nav-link" id="firstperson-tab" data-toggle="tab" href="#firstperson" role="tab" aria-controls="home" aria-selected="false">First-person</a>
 						  </li>
 						</ul>
 
@@ -188,7 +188,7 @@
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: 'https://raw.githubusercontent.com/RebeccaJillianBeattie/IMWT/main/FileListSappho.json',
+				url: 'FileListSappho.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
@@ -198,7 +198,88 @@
 					alert('No document to show')
 				}
 			});
-	</script>
+			
+			
+			$('#showimagery').click(function() {
+				if (this.checked) 
+					$('.imagery').addClass('text-imagery')
+				else
+					$('.imagery').removeClass('text-imagery')
+			})
+			$('#showsong').click(function() {
+				if (this.checked) 
+					$('.song').addClass('text-song')
+				else
+					$('.keyword').removeClass('text-song')
+			})
+			$('#showsfirstperson').click(function() {
+				if (this.checked) 
+					$('.firstperson').addClass('text-firstperson')
+				else
+					$('.firstperson').removeClass('text-firstperson')
+			})
+		
+		}
 
+
+		function load(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('.show').prop("checked", false)
+					addIds()
+					filltabs()
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}
+		
+		function addIds() {
+			addId('.imagery','imagery')
+			addId('.song','song')
+			addId('.firstperson', 'firstperson')
+		}
+		
+		function addId(what, prefix) {
+			var id = '0'
+			var elements = $(what); 
+			for (var i=0; i<elements.length; i++) {
+				elements[i].id = prefix + "-" + id++
+			}
+		}
+		function filltabs(){
+			filltab("#file .imagery","list-imagery","#imagery")
+			filltab("#file .song","list-song","#song")
+			filltab("#file .firstperson","list-firstperson","#firstperson")
+		}
+		
+		
+		function filltab(what,style,where) {
+			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					place: '#'+elements[i].id,
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
+
+		function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('body').animate({ scrollTop: t }, 200);
+			$(id).addClass('animate');
+			setTimeout(function(){
+				$(id).removeClass('animate');
+			},5000);
+		}
+		
+	</script>
 </body>
 </html>
